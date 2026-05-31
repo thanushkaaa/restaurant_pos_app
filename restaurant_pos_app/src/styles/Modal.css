@@ -1,0 +1,84 @@
+.modalOverlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.modal{
+    background-color: white;
+    color: black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    width: 80%;
+}
+
+.modalHeader{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+p{
+    font-size: 15px;
+    display: inline-block;
+}
+
+.name, .phone{
+    width: 80%;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.button{
+    width: 100%;
+    padding: 10px;
+    background-color: #4f45dd;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.errorNameText, .errorPhoneText{
+    font-size: 12px;
+    color: red;
+    padding: 3px;
+    visibility: hidden;
+    margin-bottom: 20px;
+}
+
+.name:invalid[focused="true"] ~ .errorNameText{
+    visibility: visible;
+}
+
+
+.phone:invalid[focused="true"] ~ .errorPhoneText{
+    visibility: visible;
+}
+
+
+@media screen and (min-width: 721px) {
+    .modal{
+        width: 50vw;
+    }
+    
+}
+
+@media screen and (min-width: 1025px) {
+    .modal{
+        width: 25vw;
+    }
+    
+}

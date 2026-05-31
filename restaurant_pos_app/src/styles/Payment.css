@@ -1,0 +1,76 @@
+.orderPayment{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    position: relative;
+}
+
+.orderPaymentHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.orderPaymentHeader > * {
+    width: 100%;
+    color: white;
+    background-color: hwb(231 12% 75%);
+    padding: 5px;
+    border: none;
+    border-radius: 2px;
+    margin-right: 3px;
+}
+
+.orderPaymentBody{
+    margin: 15px 0px 50px 0px;
+}
+
+.gst, .SubTotal{
+    color: hsl(231, 13%, 50%);
+    font-size: 15px;
+}
+
+.total{
+    font-weight: bold;
+}
+
+.orderPaymentBody > *{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0px;
+}
+
+.orderPaymentFooter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.orderPaymentFooter > * {
+    width: 100%;
+    color: white;
+    background-color: rgb(48, 50, 64);
+    padding: 5px;
+    border: none;
+    border-radius: 2px;
+    margin-right: 3px;
+    font-weight: bold;
+}
+
+.success{
+    color: rgb(5, 199, 5);
+    font-weight: bold;
+    z-index: 1;
+    margin-bottom: -30px;
+}
+
+.fail{
+    color: rgb(255, 84, 84);
+    font-weight: bold;
+    z-index: 1;
+    margin-bottom: -30px;
+}
+
+.normal{
+    display: none;
+}

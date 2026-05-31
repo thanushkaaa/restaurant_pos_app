@@ -1,0 +1,1 @@
+Hello this is my front end react restaurant pos app which is used to book the table, Take orders from the customers and proceed them to the kitchen, it also manages the tables, orders and customers, and also it handles the payment.
